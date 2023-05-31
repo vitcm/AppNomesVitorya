@@ -1,4 +1,3 @@
-import { FlatList } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
 
@@ -18,7 +17,7 @@ export const TitleWrapper = styled.View`
   margin-right: 20px;
   flex: 1;
   justify-content: flex-end;
-  margin-bottom: -25;
+  margin-bottom: -25px;
 `;
 
 export const Title = styled.Text`
@@ -33,35 +32,33 @@ export const Body = styled.View`
   /* height: ${RFValue(500)}px; */
   background-color: ${({ theme }) => theme.colors.cinza};
   align-items: center;
-  /* justify-content: center; */
   border-left-color: ${({ theme }) => theme.colors.amarelo};
   border-left-width: 20px;
 `;
 
-export const Lista = styled.View`
-  /* background-color: ${({ theme }) => theme.colors.amarelo}; */
-  width: 90%;
+export const Insercao = styled.View`
+  width: 100%;
   margin-top: 40px;
-`;
-// export const Lista = styled(FlatList).attrs({
-//   // attrs: adiciona propriedades
-//   contentContainerStyle: {
-//     padding: 24,
-//   },
-//   showVerticalScrollIndicator: false,
-// })``
-
-export const NomeWrapper = styled.View`
-  background-color: ${({ theme }) => theme.colors.cinza_claro};
-  height: 50px;
-  border-radius: 10px;
-  justify-content: center;
-  margin-bottom: 10px;
+  padding: 0 20px;
 `;
 
-export const Nome = styled.Text`
-  margin-left: 15px;
+export const TitleInput = styled.Text`
+  /* margin-left: 15px; */
   font-family: ${({ theme }) => theme.fonts.worksans_regular};
-  font-size: ${RFValue(18)}px;
+  font-size: ${RFValue(15)}px;
   color: ${({ theme }) => theme.colors.preto};
+`;
+
+export const TitleInputDois = styled.Text`
+  font-family: ${({ theme }) => theme.fonts.worksans_regular};
+  font-size: ${RFValue(10)}px;
+  color: ${({ theme }) => theme.colors.preto};
+`;
+
+export const Footer = styled.View`
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
 `;

@@ -6,11 +6,11 @@ import {
   Title,
   Header,
   Body,
-  TitleBody,
-  TitleFooter,
-  Footer,
+  Lista,
+  NomeWrapper,
+  Nome,
 } from "./style";
-import { Button } from "../../components/Button";
+import { ButtonAdd } from "../../components/ButtonAdd";
 
 export function Dashboard() {
   return (
@@ -21,11 +21,21 @@ export function Dashboard() {
         </TitleWrapper>
       </Header>
       <Body>
-        <TitleBody> TESTE </TitleBody>
+        <Lista>
+          <NomeWrapper>
+            <Nome>Nome</Nome>
+          </NomeWrapper>
+          <NomeWrapper>
+            <Nome>Nome</Nome>
+          </NomeWrapper>
+          <NomeWrapper>
+            <Nome>Nome</Nome>
+          </NomeWrapper>
+          <NomeWrapper>
+            <Nome>Nome</Nome>
+          </NomeWrapper>
+        </Lista>
       </Body>
-      <Footer>
-        <Button />
-      </Footer>
     </Container>
   );
 }

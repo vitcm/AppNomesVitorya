@@ -2,10 +2,12 @@ import React from "react";
 
 import { Container, Title } from "./style";
 
-export function Button() {
+
+
+export function ButtonAdd() {
   return (
     <Container>
-      <Title>confirma</Title>
+      <Title>adicionar</Title>
     </Container>
   );
 }

@@ -2,11 +2,16 @@ export default {
   colors: {
     rosa: "#E8025C",
     amarelo: "#F7AD2D",
+    amarelo_claro: "#D7C68B",
     cinza: "#C0C0C0",
+    cinza_claro: "#D9D9D9",
     azul: "#2CBCD6",
     azul_claro: "#8BCBD7",
+    azul_escrita: "#777D90",
     preto: "#000000",
     branco: "#FFFFFF",
+    vermelho: "#D62C2C",
+    vermelho_claro: "#D78B8B",
   },
   fonts: {
     inter_regular: "Inter_400Regular",
@@ -14,5 +19,7 @@ export default {
     archivo_regular: "Archivo_400Regular",
     archivo_medium: "Archivo_500Medium",
     archivo_bold: "Archivo_600SemiBold",
+    worksans_regular: "WorkSans_400Regular",
+    worksans_bold: "WorkSans_600SemiBold",
   },
 };

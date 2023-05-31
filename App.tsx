@@ -1,6 +1,7 @@
 import React from "react";
 import * as SplashScreen from "expo-splash-screen";
 import AppLoading from "expo-app-loading";
+import { NavigationContainer } from "@react-navigation/native";
 
 import {
   useFonts,
@@ -12,10 +13,17 @@ import {
   Archivo_500Medium,
   Archivo_600SemiBold,
 } from "@expo-google-fonts/archivo";
+import {
+  WorkSans_400Regular,
+  WorkSans_600SemiBold,
+} from "@expo-google-fonts/work-sans";
 
 import { ThemeProvider } from "styled-components";
 import theme from "./src/styles/theme";
 import { Dashboard } from "./src/screens/Dashboard";
+import { Cadastro } from "./src/screens/Cadastro";
+import { Alteracao } from "./src/screens/Alteracao";
+import { AppRoutes } from "./src/routes/app.routes";
 
 export default function App() {
   SplashScreen.preventAutoHideAsync();
@@ -25,6 +33,8 @@ export default function App() {
     Archivo_400Regular,
     Archivo_500Medium,
     Archivo_600SemiBold,
+    WorkSans_400Regular,
+    WorkSans_600SemiBold,
   });
   if (!fontsLoaded) {
     return <AppLoading />;
@@ -33,7 +43,9 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Dashboard />
+      <NavigationContainer>
+        <AppRoutes />
+      </NavigationContainer>
     </ThemeProvider>
   );
 }
